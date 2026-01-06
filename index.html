@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>品牌产品展示</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>品牌列表</h2>
+            <ul class="brand-list">
+                <li class="brand-item active" data-brand="dior">
+                    <span class="brand-icon">✨</span>
+                    <span class="brand-name">迪奥</span>
+                </li>
+                <li class="brand-item" data-brand="tf">
+                    <span class="brand-icon">💎</span>
+                    <span class="brand-name">TF</span>
+                </li>
+                <li class="brand-item" data-brand="ysl">
+                    <span class="brand-icon">🌟</span>
+                    <span class="brand-name">圣罗兰</span>
+                </li>
+                <li class="brand-item" data-brand="armani">
+                    <span class="brand-icon">🎯</span>
+                    <span class="brand-name">阿玛尼</span>
+                </li>
+
+            </ul>
+        </div>
+        
+        <div class="main-content">
+            <div class="brand-header">
+                <h1 id="brand-title">迪奥</h1>
+                <p id="brand-description">精选迪奥口红与香水系列</p>
+            </div>
+            
+            <div class="product-sections">
+                <div class="product-section">
+                    <h2 class="section-title">口红系列</h2>
+                    <div class="product-grid" id="lipstick-products">
+                    </div>
+                </div>
+                
+                <div class="product-section">
+                    <h2 class="section-title">香水系列</h2>
+                    <div class="product-grid" id="perfume-products">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
